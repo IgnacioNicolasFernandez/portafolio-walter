@@ -1,4 +1,4 @@
-import { Cpu } from 'lucide-react';
+import { Cpu, CheckCircle2 } from 'lucide-react';
 
 const Skills = () => {
   const skills = {
@@ -8,22 +8,25 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-32 md:py-20 px-6 w-full relative transition-colors duration-300">
-      <div className="w-full max-w-6xl text-center">
-        <h2 className="text-5xl md:text-3xl font-bold text-slate-900 dark:text-white mb-20 md:mb-16 flex items-center justify-center gap-3">
-          <Cpu className="w-10 h-10 md:w-6 md:h-6 text-primary dark:text-primary" /> Habilidades Técnicas
+    <section id="skills" className="flex flex-col items-start justify-center py-16 md:py-20 px-6 w-full relative transition-colors duration-300">
+      <div className="w-full max-w-6xl mx-auto text-left">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 border-b border-primary/20 pb-4 flex items-center gap-3">
+          <Cpu className="text-primary w-8 h-8" /> Habilidades Técnicas
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left w-full mt-4">
           {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="bg-white dark:bg-slate-800/30 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 transition-colors shadow-sm dark:shadow-none">
-              <h3 className="text-primary-dark dark:text-primary font-bold mb-6 text-2xl md:text-lg">{category}</h3>
-              <div className="flex flex-wrap gap-4 md:gap-2">
+            <div key={category} className="flex flex-col bg-white dark:bg-surface border border-slate-200 dark:border-white/5 p-6 md:p-8 rounded-xl shadow-sm">
+              <h3 className="text-slate-900 dark:text-white font-bold text-xl mb-6">
+                {category}
+              </h3>
+              <ul className="flex flex-col gap-4">
                 {items.map(skill => (
-                  <span key={skill} className="text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-900 px-5 py-2 md:px-3 md:py-1 rounded-full text-lg md:text-sm border border-slate-200 dark:border-slate-800 shadow-sm">
-                    {skill}
-                  </span>
+                  <li key={skill} className="flex items-start text-slate-700 dark:text-slate-300 text-base">
+                    <CheckCircle2 className="text-primary w-5 h-5 mr-3 shrink-0" />
+                    <span>{skill}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

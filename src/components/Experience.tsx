@@ -1,4 +1,4 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, Building2 } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -33,40 +33,41 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen flex flex-col items-center justify-center py-20 px-4 w-full relative transition-colors duration-300">
-      <div className="w-full max-w-6xl text-center">
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center justify-center gap-3">
-          <Briefcase className="text-primary dark:text-primary" /> Experiencia
+    <section id="experience" className="flex flex-col items-start justify-center py-16 md:py-20 px-6 w-full relative transition-colors duration-300">
+      <div className="w-full max-w-6xl mx-auto text-left">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 border-b border-primary/20 pb-4 flex items-center gap-3">
+          <Briefcase className="text-primary w-8 h-8" /> Experiencia Laboral
         </h2>
 
-        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 dark:before:via-slate-700 before:to-transparent">
+        <div className="flex flex-col w-full mt-4 gap-6">
           {experiences.map((exp, index) => (
-            <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+            <div key={index} className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white dark:bg-surface border border-slate-200 dark:border-white/5 p-6 md:p-8 rounded-xl shadow-sm hover:border-primary/50 transition-colors">
               
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors duration-300">
-                <Briefcase size={16} className="text-primary dark:text-primary" />
+              <div className="md:w-48 shrink-0 flex items-start gap-2 text-primary font-bold text-base md:text-sm mt-1">
+                <Calendar className="w-5 h-5 shrink-0" />
+                {exp.period}
               </div>
               
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700/50 hover:border-primary/30 transition-all shadow-lg dark:shadow-none">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-bold text-slate-900 dark:text-white text-lg">{exp.title}</h3>
-                  <span className="text-xs font-medium px-2 py-1 rounded bg-slate-200 dark:bg-slate-800/30 text-primary-dark dark:text-primary border border-slate-300 dark:border-primary/20">
-                    {exp.company}
-                  </span>
+              <div className="flex flex-col flex-1">
+                <h3 className="font-bold text-slate-900 dark:text-white text-xl md:text-2xl mb-1">{exp.title}</h3>
+                <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400 mb-4 font-medium">
+                  <Building2 className="w-4 h-4 text-primary" />
+                  {exp.company}
                 </div>
-                <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm mb-3">
-                  <Calendar size={14} />
-                  {exp.period}
-                </div>
-                <p className="text-slate-600 dark:text-slate-300 text-sm mb-4">{exp.description}</p>
-                <div className="flex flex-wrap gap-2">
+                
+                <p className="text-slate-600 dark:text-slate-300 text-base mb-6 leading-relaxed">
+                  {exp.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {exp.tags.map(tag => (
-                    <span key={tag} className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded">
-                      #{tag}
+                    <span key={tag} className="text-xs font-semibold bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 px-3 py-1.5 rounded-md border border-slate-200 dark:border-white/5">
+                      {tag}
                     </span>
                   ))}
                 </div>
               </div>
+              
             </div>
           ))}
         </div>

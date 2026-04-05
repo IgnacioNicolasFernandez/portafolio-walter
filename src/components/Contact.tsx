@@ -1,35 +1,47 @@
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 w-full relative bg-slate-50 dark:bg-surface transition-colors duration-300">
-      <div className="max-w-3xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">¿Trabajamos juntos?</h2>
-        <p className="text-slate-600 dark:text-slate-400 mb-8 text-lg">
-          Estoy disponible para nuevos desafíos profesionales. Si buscas un perfil técnico con sólida experiencia en campo, resolución de problemas de infraestructura y compromiso, hablemos.
-        </p>
+    <section id="contact" className="py-16 md:py-24 px-6 w-full relative bg-slate-50 dark:bg-background transition-colors duration-300">
+      <div className="max-w-4xl mx-auto text-left">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 border-b border-primary/20 pb-4 flex items-center gap-3">
+          <Send className="text-primary w-8 h-8" /> Contacto
+        </h2>
         
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
-          <a 
-            href="mailto:walteraguirres@hotmail.com" 
-            className="flex items-center gap-2 text-slate-900 dark:text-white hover:text-primary-dark dark:hover:text-primary transition-colors text-lg font-medium"
-          >
-            <Mail /> walteraguirres@hotmail.com
-          </a>
-          <span className="hidden md:inline text-slate-300 dark:text-slate-600">|</span>
-          <span className="text-slate-900 dark:text-white text-lg font-medium">Cel: 15 6816-8075</span>
-          <span className="hidden md:inline text-slate-300 dark:text-slate-600">|</span>
-          <span className="text-slate-900 dark:text-white text-lg font-medium">Villa Bosch, 1682</span>
-        </div>
-
-        <div className="flex justify-center gap-4">
-          <a href="#" className="p-4 bg-white dark:bg-slate-800 rounded-full text-slate-600 dark:text-slate-300 hover:text-white hover:bg-primary-dark dark:hover:bg-primary-dark transition-all hover:-translate-y-1 shadow-lg border border-slate-200 dark:border-transparent">
-            <Linkedin size={24} />
-          </a>
+        <div className="bg-white dark:bg-surface border border-slate-200 dark:border-white/5 p-8 md:p-12 rounded-2xl shadow-lg mt-8">
+          <p className="text-slate-600 dark:text-slate-300 text-lg md:text-xl mb-10 leading-relaxed">
+             Estoy disponible para nuevos desafíos profesionales. Si buscas un perfil técnico con sólida experiencia en campo, resolución de problemas de infraestructura y compromiso, interactuemos.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-base">
+            <div className="flex items-center gap-4 bg-slate-50 dark:bg-black/30 p-4 rounded-xl border border-slate-100 dark:border-white/5">
+              <Mail className="text-primary w-8 h-8 shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Email</span>
+                <a href="mailto:walteraguirres@hotmail.com" className="text-slate-900 dark:text-white font-medium hover:text-primary transition-colors truncate">walteraguirres@hotmail.com</a>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4 bg-slate-50 dark:bg-black/30 p-4 rounded-xl border border-slate-100 dark:border-white/5">
+              <Phone className="text-primary w-8 h-8 shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Teléfono</span>
+                <span className="text-slate-900 dark:text-white font-medium">15 6816-8075</span>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4 bg-slate-50 dark:bg-black/30 p-4 rounded-xl border border-slate-100 dark:border-white/5 lg:col-span-2">
+              <MapPin className="text-primary w-8 h-8 shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Ubicación</span>
+                <span className="text-slate-900 dark:text-white font-medium">Villa Bosch, 1682</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
-      <footer className="mt-24 text-center text-slate-500 dark:text-slate-600 text-sm border-t border-slate-200 dark:border-slate-800 pt-8">
+      <footer className="mt-20 text-center text-slate-500 text-sm border-t border-slate-200 dark:border-white/5 pt-8 pb-8">
         <p>© 2026 Walter Aguirre Skulski.</p>
       </footer>
     </section>

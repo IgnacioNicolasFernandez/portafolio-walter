@@ -44,17 +44,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="fixed top-0 left-0 right-0 z-50 max-w-fit mx-auto mt-6 rounded-full px-4 md:px-8 py-3 backdrop-blur-md bg-white/80 dark:bg-surface/80 border border-slate-200 dark:border-white/10 transition-colors duration-300 shadow-lg">
+      <div className="flex items-center justify-between gap-8 h-10 w-full">
           
           {/* LOGO */}
           <div className="flex items-center gap-2">
-            <img 
-              src="/logo.svg" 
-              alt="Logo Ignacio Dev" 
-              className="h-10 w-10" 
-            />
+            <div className="flex items-center justify-center h-10 w-10 bg-primary text-white font-bold text-2xl rounded-xl shadow-md">
+              W
+            </div>
             <span className="text-2xl md:text-xl font-bold text-slate-900 dark:text-white transition-colors">
               Walter.IT
             </span>
@@ -62,7 +59,7 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -105,7 +102,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (

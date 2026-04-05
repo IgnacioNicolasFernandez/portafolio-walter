@@ -1,4 +1,4 @@
-import { GraduationCap } from 'lucide-react';
+import { GraduationCap, Award } from 'lucide-react';
 
 const Education = () => {
   const educationData = [
@@ -15,20 +15,25 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 px-4 w-full flex flex-col items-center justify-center relative transition-colors duration-300">
-      <div className="w-full max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center justify-center gap-3">
-          <GraduationCap className="text-primary dark:text-primary" /> Formación Académica
+    <section id="education" className="flex flex-col items-start justify-center py-16 md:py-20 px-6 w-full relative transition-colors duration-300">
+      <div className="w-full max-w-6xl mx-auto text-left">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-10 border-b border-primary/20 pb-4 flex items-center gap-3">
+          <GraduationCap className="text-primary w-8 h-8" /> Formación Académica
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+        <div className="flex flex-col w-full mt-4 gap-6">
           {educationData.map((edu, index) => (
-             <div key={index} className="bg-white dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700/50 hover:border-primary/30 transition-all shadow-lg dark:shadow-none">
-                <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-2">{edu.title}</h3>
-                <span className="inline-block text-xs font-medium px-2 py-1 mb-3 rounded bg-slate-200 dark:bg-slate-800/30 text-primary-dark dark:text-primary border border-slate-300 dark:border-primary/20">
-                   {edu.institution}
-                </span>
-                {edu.description && <p className="text-slate-600 dark:text-slate-300 text-sm">{edu.description}</p>}
+             <div key={index} className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white dark:bg-surface border border-slate-200 dark:border-white/5 p-6 md:p-8 rounded-xl shadow-sm hover:border-primary/50 transition-all">
+                
+                <div className="md:w-64 shrink-0 text-primary font-bold text-base flex justify-start items-center gap-2">
+                   <Award className="w-5 h-5 shrink-0" />
+                   <span>{edu.institution}</span>
+                </div>
+                
+                <div className="flex flex-col flex-1 border-l-0 md:border-l-2 md:border-slate-200 dark:md:border-white/10 md:pl-8">
+                  <h3 className="font-bold text-slate-900 dark:text-white text-xl mb-2">{edu.title}</h3>
+                  {edu.description && <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">{edu.description}</p>}
+                </div>
              </div>
           ))}
         </div>
