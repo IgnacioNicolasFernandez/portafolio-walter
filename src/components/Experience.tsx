@@ -3,18 +3,18 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Profesor de Impresión 3D",
-      company: "PlanificarSEH / UTN",
-      period: "Actualidad",
-      description: "Digitalización de contenidos en Moodle y capacitación técnica especializada.",
-      tags: ["Moodle", "Docencia", "Tecnología"]
+      title: "Título aquí",
+      company: "Empresa aquí",
+      period: "Período aquí",
+      description: "Descripción aquí.",
+      tags: ["Etiqueta 1", "Etiqueta 2"]
     },
     {
-      title: "Desarrollador Full Stack",
-      company: "Social Learning",
-      period: "Ago 2025 - Dic 2025",
-      description: "Liderazgo técnico y onboarding de pasantes bajo metodología Scrum. Desarrollo de plataforma centralizada.",
-      tags: ["React", "Node.js", "Scrum", "Liderazgo"]
+      title: "Título aquí",
+      company: "Empresa aquí",
+      period: "Período aquí",
+      description: "Descripción aquí.",
+      tags: ["Etiqueta 1", "Etiqueta 2"]
     }
   ];
 

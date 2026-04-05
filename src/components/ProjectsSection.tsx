@@ -19,55 +19,42 @@ const ProjectsSection = () => {
 
   const projects: Project[] = [
     {
-      title: "Portal Wiki",
-      category: "Facultad",
-      description: "Sistema de Gestión de Conocimiento centralizado y altamente accesible. Transforma cómo la organización captura, organiza y comparte su expertise técnico. Incluye gestión de documentación, roles de usuario y navegación jerárquica.",
+      title: "Título Proyecto 1",
+      category: "Categoría",
+      description: "Descripción del proyecto aquí.",
       features: [
-        "Login seguro y validación de usuarios",
-        "Gestión de roles (Admin, Editor, Lector)",
-        "Menú dinámico personalizable",
-        "Soporte para PDF, texto plano y URLs",
-        "CRUD completo de documentos"
+        "Característica 1",
+        "Característica 2"
       ],
-      tech: ["Java", "Spring Boot", "Vue.js", "SQL"],
-      
-      github: "https://github.com/agus25varela/RepoFullStackPortalWiki", 
-      
-      image: "/portal-wiki.png", 
+      tech: ["Tech 1", "Tech 2"],
+      github: "#", 
+      image: "", 
       imagePlaceholder: "bg-indigo-900"
     },
     {
-      title: "Cartelera de Cine",
-      category: "Facultad",
-      description: "Catálogo online interactivo de películas y animes. Permite a los usuarios explorar contenido basado en puntuaciones y géneros, con una interfaz moderna y actualizaciones en tiempo real.",
+      title: "Título Proyecto 2",
+      category: "Categoría",
+      description: "Descripción del proyecto aquí.",
       features: [
-        "Búsqueda instantánea de títulos",
-        "Filtros avanzados por género y puntaje",
-        "Interfaz gráfica amigable e intuitiva",
-        "Gestión y actualización en tiempo real"
+        "Característica 1",
+        "Característica 2"
       ],
-      tech: ["JavaScript", "HTML", "CSS"],
-      
-      github: "https://github.com/agus25varela/CatalogoCine",
-      
-      image: "/cartelera.png",
+      tech: ["Tech 1", "Tech 2"],
+      github: "#",
+      image: "",
       imagePlaceholder: "bg-rose-900"
     },
     {
-      title: "TicTacTareas",
-      category: "Facultad",
-      description: "Aplicación integral para la gestión de productividad personal. Permite organizar tareas, establecer recordatorios y gestionar perfiles de usuario de manera eficiente.",
+      title: "Título Proyecto 3",
+      category: "Categoría",
+      description: "Descripción del proyecto aquí.",
       features: [
-        "Búsqueda inteligente de tareas",
-        "Sistema de notificaciones y recordatorios",
-        "Gestión de estado (Pendiente, En curso, Finalizada)",
-        "Perfiles de usuario personalizados"
+        "Característica 1",
+        "Característica 2"
       ],
-      tech: ["Java", "Spring Boot", "MySQL"],
-
-      github: "https://github.com/ErichSchnell/TicTacTareas",
-      
-      image: "/tictactareas.jpg",
+      tech: ["Tech 1", "Tech 2"],
+      github: "#",
+      image: "",
       imagePlaceholder: "bg-emerald-900"
     }
   ];

@@ -39,7 +39,6 @@ const Navbar = () => {
     { name: 'Inicio', href: '#home' },
     { name: 'Sobre mí', href: '#about' },
     { name: 'Experiencia', href: '#experience' },
-    { name: 'Proyectos', href: '#projects' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Contacto', href: '#contact' },
   ];
@@ -57,7 +56,7 @@ const Navbar = () => {
               className="h-10 w-10" 
             />
             <span className="text-2xl md:text-xl font-bold text-slate-900 dark:text-white transition-colors">
-              Ignacio.dev
+              Walter.IT
             </span>
           </div>
           
