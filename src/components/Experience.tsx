@@ -3,18 +3,32 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Título aquí",
-      company: "Empresa aquí",
-      period: "Período aquí",
-      description: "Descripción aquí.",
-      tags: ["Etiqueta 1", "Etiqueta 2"]
+      title: "Soporte Técnico IT e Infraestructura",
+      company: "\"SEYS\" S.R.L. (Terciarizado en Banco Piano)",
+      period: "06/2003 - 03/2026",
+      description: "Mantenimiento y soporte técnico de informática. Redes y cableado estructurado de Cámaras IP y analógicas. Telecomunicaciones y armado de Racks. Vinculaciones, testeo y reparación de redes. Telefonía IP y programación analógica. Electricidad, automatización y variadores de frecuencia.",
+      tags: ["Redes", "Telefonía IP", "CCTV", "Automatización", "Hardware"]
     },
     {
-      title: "Título aquí",
-      company: "Empresa aquí",
-      period: "Período aquí",
-      description: "Descripción aquí.",
-      tags: ["Etiqueta 1", "Etiqueta 2"]
+      title: "Técnico Electromecánico",
+      company: "Parque de la República SRL",
+      period: "2010 - 2017",
+      description: "Armado de tableros con contactores y relevo térmico. Implementación de variadores de frecuencia y configuración estrella-triángulo. Mantenimiento eléctrico general, cámaras, sistema de facturación magnéticas (cash), alarmas y control de acceso.",
+      tags: ["Tableros Industriales", "Variadores", "Electricidad", "Control de Acceso"]
+    },
+    {
+      title: "Técnico de Mantenimiento y Producción",
+      company: "DIEBOLD DPB",
+      period: "10/1998 - 01/2001",
+      description: "Mantenimiento y armado de cajeros automáticos. Tareas operativas de Producción y Logística.",
+      tags: ["Cajeros Automáticos", "Producción", "Logística"]
+    },
+    {
+      title: "Mantenimiento General",
+      company: "Hotel Sheraton",
+      period: "10/1997 - 05/1998",
+      description: "Pasantía laboral. Tareas de Mantenimiento General de las instalaciones y mantenimiento específico a piscinas.",
+      tags: ["Mantenimiento"]
     }
   ];
 

@@ -2,16 +2,16 @@ import { Cpu } from 'lucide-react';
 
 const Skills = () => {
   const skills = {
-    "Categoría 1": ["Habilidad 1", "Habilidad 2"],
-    "Categoría 2": ["Habilidad 1", "Habilidad 2"],
-    "Categoría 3": ["Habilidad 1", "Habilidad 2"]
+    "Redes y Telecom.": ["Configuración de Routers y Switches administrados", "Telefonía IP", "Cableado Estructurado", "Racks de comunicaciones"],
+    "Sistemas y Hardware": ["LINUX y Windows (XP, 7, 10, 11)", "Microinformática", "Armado de PC y reparación", "Sistemas CCTV"],
+    "Electromecánica": ["Tableros Industriales", "Variadores de frecuencia", "Contactores y Relevos", "Electricidad de Planta"]
   };
 
   return (
     <section id="skills" className="min-h-screen flex flex-col items-center justify-center py-32 md:py-20 px-6 w-full relative transition-colors duration-300">
       <div className="w-full max-w-6xl text-center">
         <h2 className="text-5xl md:text-3xl font-bold text-slate-900 dark:text-white mb-20 md:mb-16 flex items-center justify-center gap-3">
-          <Cpu className="w-10 h-10 md:w-6 md:h-6 text-primary dark:text-primary" /> Tecnologías
+          <Cpu className="w-10 h-10 md:w-6 md:h-6 text-primary dark:text-primary" /> Habilidades Técnicas
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {Object.entries(skills).map(([category, items]) => (

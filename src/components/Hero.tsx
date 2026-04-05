@@ -23,7 +23,7 @@ const Hero = () => {
             <a href="#experience" className="w-full sm:w-auto bg-primary-dark hover:bg-primary-dark dark:bg-primary dark:hover:bg-primary-dark text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20 text-xl md:text-lg">
               Ver Experiencia <ArrowRight size={22} />
             </a>
-            <a href="#" className="w-full sm:w-auto border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-xl md:text-lg">
+            <a href="/CV_Walter_Aguirre.pdf" download target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-xl md:text-lg">
               Descargar CV <Download size={22} />
             </a>
           </div>
@@ -33,12 +33,12 @@ const Hero = () => {
         <div className="order-1 lg:order-2 w-full max-w-md mx-auto">
            <div className="relative">
              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-sky-500/20 rounded-full blur-3xl" />
-            <div className="relative bg-slate-800/50 p-6 rounded-3xl border border-slate-700/50 backdrop-blur-md shadow-2xl transition-colors duration-300">
+            <div className="relative bg-white/70 dark:bg-slate-800/50 p-6 rounded-3xl border border-slate-200 dark:border-slate-700/50 backdrop-blur-md shadow-xl dark:shadow-2xl transition-colors duration-300">
                {/* Encabezado del dashboard */}
-               <div className="flex items-center justify-between mb-6 border-b border-slate-700/50 pb-4">
+               <div className="flex items-center justify-between mb-6 border-b border-slate-200 dark:border-slate-700/50 pb-4">
                  <div className="flex items-center gap-3">
                    <Server className="text-primary w-6 h-6" />
-                   <h3 className="text-white font-semibold tracking-wide">Server Dashboard</h3>
+                   <h3 className="text-slate-900 dark:text-white font-semibold tracking-wide">Server Dashboard</h3>
                  </div>
                  <div className="flex gap-2">
                    <div className="w-3 h-3 rounded-full bg-slate-600" />
@@ -49,39 +49,39 @@ const Hero = () => {
 
                {/* Métricas */}
                <div className="space-y-4 font-mono text-sm">
-                 <div className="flex items-center justify-between bg-slate-900/50 p-4 rounded-xl border border-slate-700/30">
+                 <div className="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/30 transition-colors">
                    <div className="flex items-center gap-3">
                      <Activity className="text-primary w-5 h-5" />
-                     <span className="text-slate-300">System Status</span>
+                     <span className="text-slate-600 dark:text-slate-300">System Status</span>
                    </div>
                    <div className="flex items-center gap-2">
-                     <span className="text-green-400 font-bold">Online</span>
+                     <span className="text-emerald-600 dark:text-green-400 font-bold">Online</span>
                      <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse" />
                    </div>
                  </div>
 
-                 <div className="flex items-center justify-between bg-slate-900/50 p-4 rounded-xl border border-slate-700/30">
+                 <div className="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/30 transition-colors">
                    <div className="flex items-center gap-3">
                      <Server className="text-primary w-5 h-5" />
-                     <span className="text-slate-300">Uptime</span>
+                     <span className="text-slate-600 dark:text-slate-300">Uptime</span>
                    </div>
-                   <div className="text-sky-400 font-bold">99.98%</div>
+                   <div className="text-primary-dark dark:text-sky-400 font-bold">99.98%</div>
                  </div>
 
-                 <div className="flex items-center justify-between bg-slate-900/50 p-4 rounded-xl border border-slate-700/30">
+                 <div className="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/30 transition-colors">
                    <div className="flex items-center gap-3">
                      <ShieldCheck className="text-primary w-5 h-5" />
-                     <span className="text-slate-300">Network</span>
+                     <span className="text-slate-600 dark:text-slate-300">Network</span>
                    </div>
-                   <div className="text-sky-400 font-bold">Secured</div>
+                   <div className="text-primary-dark dark:text-sky-400 font-bold">Secured</div>
                  </div>
 
-                 <div className="flex items-center justify-between bg-slate-900/50 p-4 rounded-xl border border-slate-700/30">
+                 <div className="flex items-center justify-between bg-slate-100/80 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/30 transition-colors">
                    <div className="flex items-center gap-3">
                      <Wifi className="text-primary w-5 h-5" />
-                     <span className="text-slate-300">Latency</span>
+                     <span className="text-slate-600 dark:text-slate-300">Latency</span>
                    </div>
-                   <div className="text-sky-400 font-bold">12ms</div>
+                   <div className="text-primary-dark dark:text-sky-400 font-bold">12ms</div>
                  </div>
                </div>
              </div>
