@@ -23,7 +23,7 @@ const Hero = () => {
             <a href="#experience" className="w-full sm:w-auto bg-primary-dark hover:bg-primary-dark dark:bg-primary dark:hover:bg-primary-dark text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20 text-xl md:text-lg">
               Ver Experiencia <ArrowRight size={22} />
             </a>
-            <a href="/CV_Walter_Aguirre.pdf" download target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-xl md:text-lg">
+            <a href="/CV_Aguirre Walter.pdf" download target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-xl md:text-lg">
               Descargar CV <Download size={22} />
             </a>
           </div>

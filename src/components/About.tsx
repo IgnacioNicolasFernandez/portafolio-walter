@@ -10,10 +10,10 @@ const About = () => {
         
         <div className="md:grid md:grid-cols-2 md:gap-12 text-left mb-16">
           <p className="text-slate-700 dark:text-slate-300 text-xl md:text-lg leading-relaxed mb-6 md:mb-0">
-            Soy Técnico Electromecánico con más de 20 años de trayectoria en soporte técnico IT, especializado en redes, telefonía IP y telecomunicaciones. Mi enfoque combina el diagnóstico preciso de hardware con la gestión eficiente de infraestructura de red, buscando siempre aportar valor y asegurar la continuidad operativa en equipos tecnológicos innovadores.
+            Técnico electromecánico con más de 20 años de trayectoria en soporte técnico, telecomunicaciones e infraestructura eléctrica. Especialista en redes de telefonía IP, conectividad y mantenimiento integral de grandes edificios y sucursales bancarias. Poseo una formación sólida con experiencia práctica en la resolución de fallas complejas en instalaciones eléctricas industriales y comerciales.
           </p>
           <blockquote className="border-l-4 border-l-primary bg-transparent py-2 pl-6 text-left italic text-slate-600 dark:text-white/70 text-lg md:text-base h-fit">
-            "Busco integrar equipos de desarrollo innovadores, aportando mi experiencia de campo en infraestructura IT."
+            "Busco aportar mi experiencia operativa resolviendo fallas críticas en infraestructura eléctrica e IT, asegurando la continuidad de servicio en entornos exigentes."
           </blockquote>
         </div>
 

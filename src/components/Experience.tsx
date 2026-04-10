@@ -3,31 +3,31 @@ import { Briefcase, Calendar, Building2 } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Soporte Técnico IT e Infraestructura",
-      company: "\"SEYS\" S.R.L. (Terciarizado en Banco Piano)",
+      title: "Técnico de Mantenimiento de Electricidad, Redes y Telecom.",
+      company: ">_ Empresa: \"SEYS\" S.R.L. (Banco Piano) | Loc: Buenos Aires",
       period: "06/2003 - 03/2026",
-      description: "Mantenimiento y soporte técnico de informática. Redes y cableado estructurado de Cámaras IP y analógicas. Telecomunicaciones y armado de Racks. Vinculaciones, testeo y reparación de redes. Telefonía IP y programación analógica. Electricidad, automatización y variadores de frecuencia.",
+      description: "Responsable del mantenimiento integral de telecomunicaciones en sucursales de toda la provincia y CABA. Gestión de enlaces de red y configuración de centrales telefónicas. Mantenimiento eléctrico completo de edificios: desde tableros principales y maniobras con fusibles NH hasta instalaciones internas. Instalación de cableado estructurado, armado de racks y soporte IT.",
       tags: ["Redes", "Telefonía IP", "CCTV", "Automatización", "Hardware"]
     },
     {
-      title: "Técnico Electromecánico",
-      company: "Parque de la República SRL",
+      title: "Técnico de Mantenimiento Electromecánico",
+      company: ">_ Empresa: Parque de la República SRL | Loc: La Plata",
       period: "2010 - 2017",
-      description: "Armado de tableros con contactores y relevo térmico. Implementación de variadores de frecuencia y configuración estrella-triángulo. Mantenimiento eléctrico general, cámaras, sistema de facturación magnéticas (cash), alarmas y control de acceso.",
+      description: "Armado de tableros industriales con contactores y relevos térmicos. Automatización y control de accesos. Mantenimiento electrónico de juegos: reparación de pulsadores, plaquetas y sistemas de control. Soporte técnico de microinformática y reparación de PCs.",
       tags: ["Tableros Industriales", "Variadores", "Electricidad", "Control de Acceso"]
     },
     {
-      title: "Técnico de Mantenimiento y Producción",
-      company: "DIEBOLD DPB",
+      title: "Técnico de Producción y Configuración",
+      company: ">_ Empresa: DIEBOLD DPB | Loc: San Cristobal",
       period: "10/1998 - 01/2001",
-      description: "Mantenimiento y armado de cajeros automáticos. Tareas operativas de Producción y Logística.",
+      description: "Armado integral de cajeros automáticos: ensamblado de fuentes, placas, monitores y módulos. Carga de software mediante clonación de imágenes y configuración final según requerimientos del cliente (Red Link / Banelco). Control de calidad en línea de producción.",
       tags: ["Cajeros Automáticos", "Producción", "Logística"]
     },
     {
       title: "Mantenimiento General",
-      company: "Hotel Sheraton",
+      company: ">_ Empresa: Hotel Sheraton | Loc: Retiro",
       period: "10/1997 - 05/1998",
-      description: "Pasantía laboral. Tareas de Mantenimiento General de las instalaciones y mantenimiento específico a piscinas.",
+      description: "Pasantía. Mantenimiento preventivo de instalaciones eléctricas y plomería básica en el edificio. Mantenimiento integral de piscinas y asistencia en limpieza general técnica.",
       tags: ["Mantenimiento"]
     }
   ];
